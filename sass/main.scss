@@ -7,19 +7,15 @@
 @import "components/team";
 @import "components/clients";
 @import "components/footer";
-@import "components/modalka";
+@import "components/modal";
 @import "components/portfolio";
+@import "./utils/hidden";
+@import "./components/container";
 
 body {
   font-family: Roboto, sans-serif;
   background-color: var(--main-title-color);
   color: var(--second-title-color);
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
 }
 
 /*--------------HEADER----------*/
@@ -53,15 +49,6 @@ body {
   opacity: 0;
   pointer-events: none;
   position: absolute;
-}
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
 }
 
 .modal-check:focus + .modal-check-text span,
